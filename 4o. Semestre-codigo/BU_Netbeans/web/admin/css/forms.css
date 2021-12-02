@@ -1,0 +1,227 @@
+.onmouseout {
+  	background-color: #ffffff;
+}
+.onmouseover {
+  	background-color: #ebf1fc;
+}
+
+/* 
+=== Bot�es com imagem
+=== Exemplo de implemta��o:
+	 
+*/
+div#btn,
+div#btn-left,
+div#btn-right {
+	border: 1px solid #b8b8b8;
+	vertical-align: middle; text-align: center;
+  	padding: 2px 2px 2px 2px;
+	margin: 3px 3px 3px 3px;
+	width: 74px;
+	_width: 70px;
+	height: 18px;
+	_height: 24px; /*IE hack*/
+}
+div#btn-left {
+	float: left;
+}
+div#btn-right{
+	float: right;
+}
+input#btn,
+input#btn-confirmar,
+input#btn-cancelar,
+input#btn-salvar,
+input#btn-excluir,
+input#btn-pesquisar,
+input#btn-consulta,
+input#btn-imprimir,
+input#btn-listagem,
+input#btn-fechar {
+	height: 100%; 
+	width: 76px; 
+	_width: 72px;
+	border: 0px solid #000000;
+	cursor: pointer;
+	vertical-align: middle; text-align: center;
+	font-size: 11px; color: #333333;
+	background-color: transparent;
+	background-repeat: no-repeat; background-position: left;
+	padding-left: 11px;
+	padding-right: 2px;
+}
+input#btn-confirmar {
+  	background-image: url(../imgs/btn-confirmar.gif);
+}
+input#btn-cancelar {
+  	background-image: url(../imgs/btn-cancelar.gif);
+}
+input#btn-salvar {
+  	background-image: url(../imgs/btn-salvar.gif);
+}
+input#btn-excluir {
+  	background-image: url(../imgs/btn-excluir.png);
+}
+input#btn-imprimir {
+  	background-image: url(../imgs/btn-imprimir.png);
+}
+input#btn-pesquisar {
+  	background-image: url(../imgs/btn-pesquisar.png);
+}
+input#btn-consulta {
+  	background-image: url(../imgs/btn-consulta.png);
+}
+input#btn-listagem {
+  	background-image: url(../imgs/btn-listagem.png);
+}
+input#btn-fechar {
+  	background-image: url(../imgs/btn-fechar.gif);
+}
+
+textarea {
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+  	font-size: 11px;
+	color: #006699;
+	text-decoration: none;
+	border: 1px solid #B8B8B8;
+} 
+
+select,
+input.text,
+input.textlcase,
+input.textucase,
+input.textpcase {
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+  	font-size: 11px;
+	color: #006699;
+	height: 18px;
+	text-decoration: none;
+	border: 1px solid #B8B8B8;
+}
+
+input.textlcase {
+  text-transform:lowercase;
+}
+input.textucase {
+  text-transform:uppercase;
+}
+input.textpcase {
+  text-transform:capitalize;
+}
+
+.row1 {
+	background-color: #ffffff
+}
+.row2 {
+	background-color: #f9f9f9
+}
+.row1 td {
+	border-bottom: #eeeeee 1px solid
+}
+.row2 td {
+	border-bottom: #eeeeee 1px solid
+}
+.previous td {
+	border-bottom: #eeeeee 1px solid
+}
+.highlight {
+	background-color: #ebf1fc
+}
+.highlight td {
+	border-bottom: #eeeeee 1px solid
+} 
+.highlight2 {
+	background-color: #FFEE88;	
+	/*
+	padding: 2px;
+	border-top: 1px solid #FFED86;
+	border-left: 1px solid #FFED86;
+	border-right: 1px solid #FFD700;
+	border-bottom: 1px solid #FFD700; 
+	*/
+}
+.highlight3 {
+	font-weight: bolder;
+	background-color: #FFEE88;
+	color: #000000;
+	padding: 2px 0px 2px 0px;
+}
+.panel,
+.panel-a,
+.panel-b {
+	float: left; margin-right: 10px;
+}
+.panel{
+	width: 600px;
+}
+.panel-a{
+	width: 325px;
+}
+.panel-b {
+	width: 430px;
+}
+.panel-a table img {
+	margin-bottom: 3px
+}
+.panel table,
+.panel-a table,
+.panel-b table {
+	width: 100%; border-collapse: collapse
+}
+.panel table td {
+	padding: 1px 3px 1px 3px;
+}
+.panel table td.coluna {
+	font-weight: bolder;
+	background-color: #ebf1fc;
+	color: #000000;
+	padding: 3px 3px 3px 3px;
+}
+.panel table td.colunasel {
+	font-weight: bolder;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 3px 3px 3px 0px;
+	border-left: 3px solid #BCCEF5;
+}
+.panel-a table td {
+	padding: 10px 10px 10px 10px; cursor: pointer; text-align: center;
+}
+.panel-b table td {
+	padding: 6px 6px 6px 6px; cursor: pointer;
+}
+
+.panel table tr.borderbottom th,
+.panel-b table tr.borderbottom th {
+	border-bottom: 2px solid #ffd700;
+}
+.panel table tr.bordertop th,
+.panel-b table tr.bordertop th {
+	border-top: 2px solid #ffd700;
+}
+.panel table tr.borderbottom td,
+.panel-b table tr.borderbottom td {
+	border-bottom: 1px solid #ffffff;
+}
+.separador {
+	height: 1px;
+	border-bottom: 2px ridge #E7EEFB;
+}
+.panel table th,
+.panel-b table th {
+	padding: 4px 4px 4px 4px;
+}
+
+.panel fieldset,
+.panel-a fieldset,
+.panel-b fieldset {
+	margin-bottom: 5px;
+	border: 1px solid #d5d5d5;
+}
+.panel fieldset legend,
+.panel-a fieldset legend, 
+.panel-b fieldset legend {
+	border: 1px solid #d5d5d5;
+	padding: 3px 5px 3px 5px; 
+	margin: 3px 0px 3px 0px;   
+}

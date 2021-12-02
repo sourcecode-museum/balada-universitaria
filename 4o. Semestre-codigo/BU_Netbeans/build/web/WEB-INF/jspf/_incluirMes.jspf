@@ -1,0 +1,59 @@
+<%@page import="java.util.List, java.lang.*" %>
+<%
+String vmes = request.getParameter("mes");
+int mesInt;
+  if (vmes==null) {
+      mesInt=7;
+  } else {
+    mesInt = Integer.parseInt(vmes);
+  }
+
+   if (mesInt==1) {%>
+                                    <option selected value=1 class="txt5">Janeiro</option>
+<%    } else {%>                                                                        
+                                    <option value=1 class="txt5">Janeiro</option>                                    
+<% }   if (mesInt==2){%>                                                                      
+                                    <option selected value=2  class="txt5">Fevereiro</option>
+<%    } else {%>                                                                        
+                                    <option value=2 class="txt5">Fevereiro</option>                                    
+<% }   if (mesInt==3){%>                                                                      
+                                    <option selected value=3 class="txt5">Março</option>
+<%    } else {%>                                                                        
+                                    <option value=3 class="txt5">Março</option>                                                                         
+<% }   if (mesInt==4){%>                                                                      
+                                    <option selected value=4 class="txt5">Abril</option>
+<%    } else {%>                                                                        
+                                    <option value=4 class="txt5">Abril</option>  
+<% }   if (mesInt==5){%>                                                                      
+                                    <option selected value=5 class="txt5">Maio</option>
+<%    } else {%>                                                                        
+                                    <option value=5 class="txt5">Maio</option>
+<% }   if (mesInt==6){%>                                                                      
+                                    <option selected value=6 class="txt5">Junho</option>
+<%    } else {%>                                                                        
+                                    <option value=6 class="txt5">Junho</option>                                    
+<% }   if (mesInt==7){%>                                  
+                                    <option selected value=7 class="txt5">Julho</option>
+<%    } else {%>                                    
+                                    <option  value=7 class="txt5">Julho</option>
+<% }   if (mesInt==8){%>                                  
+                                    <option selected value=8 class="txt5">Agosto</option>
+<%    } else {%>                                                                        
+                                    <option value=8 class="txt5">Agosto</option>
+<% }   if (mesInt==9){%>                                                                      
+                                    <option selected value=9 class="txt5">Setembro</option>
+<%    } else {%>                                                                        
+                                    <option value=9 class="txt5">Setembro</option>
+<% }   if (mesInt==10){%>                                                                      
+                                    <option selected value=10 class="txt5">Outubro</option>
+<%    } else {%>                                                                        
+                                    <option value=10 class="txt5">Outubro</option>
+<% }   if (mesInt==11){%>                                                                      
+                                    <option selected value=11 class="txt5">Novembro</option> 
+<%    } else {%>                                                                        
+                                    <option value=11 class="txt5">Novembro</option>                                                                            
+<% }   if (mesInt==12){%>                                                                      
+                                    <option selected value=12 class="txt5">Dezembro</option>   
+<%    } else {%>                                                                        
+                                    <option value=12 class="txt5">Dezembro</option>                                                                            
+<%    } %>

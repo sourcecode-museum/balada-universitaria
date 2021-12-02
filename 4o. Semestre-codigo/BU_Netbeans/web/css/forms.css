@@ -1,0 +1,81 @@
+.transparent{
+	background-color: transparent;
+}
+.onmouseout {
+  	background-color: #ffffff;
+}
+.onmouseover {
+  	background-color: #ebf1fc;
+}
+
+textarea {
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+  	font-size: 10px;
+	color: #006699;
+	text-decoration: none;
+	border: 1px solid #B8B8B8;
+} 
+
+select,
+input.text,
+input.textlcase,
+input.textucase,
+input.textpcase {
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+  	font-size: 10px;
+	color: #006699;
+	/*height: 15px;*/
+	text-decoration: none;
+	border: 1px solid #B8B8B8;
+}
+
+input.button{
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+  	font-size: 10px;
+	height: 18px;
+	text-decoration: none;
+	border: 1px solid #002A69; /*#C60000;*/
+	background-color: #3A5A8B; /*#F60000; */
+	color:#ffffff; 
+}
+
+input.textlcase {
+  text-transform:lowercase;
+}
+input.textucase {
+  text-transform:uppercase;
+}
+input.textpcase {
+  text-transform:capitalize;
+}
+
+.row1 {
+	background-color: #ffffff
+}
+.row2 {
+	background-color: #f9f9f9
+}
+.row1 td {
+	border-bottom: #eeeeee 1px solid
+}
+.row2 td {
+	border-bottom: #eeeeee 1px solid
+}
+.previous td {
+	border-bottom: #eeeeee 1px solid
+}
+.highlight {
+	background-color: #ebf1fc
+}
+.highlight td {
+	border-bottom: #eeeeee 1px solid
+} 
+.highlight2 {
+	background-color: #FFEE88;	
+}
+.highlight3 {
+	font-weight: bolder;
+	background-color: #FFEE88;
+	color: #000000;
+	padding: 2px 0px 2px 0px;
+}

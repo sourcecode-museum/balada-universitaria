@@ -1,0 +1,102 @@
+body {
+	color: #ffffff; 
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 9px;
+    background-color: #101010;
+	margin: 0 0 0 0;
+  	padding: 0 0 0 0;
+}
+.t1{
+	background-image : url("imgsestruct/t1.gif");
+	background-repeat: repeat-x;
+    background-position: top right;
+	
+}
+.t6{
+	background-image : url("imgsestruct/t6.jpg");
+	background-repeat: repeat-x;
+    background-position: top left;
+	
+}
+.btn{
+	background-color: #0A0A0A;
+	padding: 3 3 3 7;
+}
+.mr{
+	background-image : url("imgsestruct/m-r.gif");
+	background-repeat: repeat-x;
+    background-position: bottom;
+	width:100%; height: 100%;	
+}
+.input{
+	border: 1px solid #2f2f2f;
+	background-color: #0A0A0A;
+	color: #3A5A8B;
+	font-size: 9px;
+}
+
+#area{
+    padding: 3px 10px 10px 10px;
+	width: 100%;
+	height: 100%;	
+}
+#area label,
+#area label table td{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+}
+/*
+td{color: #A4A4A4; 
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+}*/
+th{
+	color: #a4a4a4; 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	font-size: 10px;
+	font-weight: bolder;
+}
+td{
+	color: #a4a4a4; 
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; 
+	font-size: 10px;
+}
+
+a.menor {font-family : tahoma, verdana; color: #ffffff; FONT-SIZE: 9px;} 
+a.menor:hover {color: #0099ff;}
+
+a.menu {font-family : arial, tahoma, verdana; color: #ffffff; FONT-SIZE: 11px; font-weight: bold;} 
+a.menu:hover {color: #0099ff;}
+
+a.arodape {font-family : tahoma, arial, verdana; color: #ffffff; FONT-SIZE: 11px;} 
+a.arodape:hover {color: Black;}
+
+
+a {font-family : tahoma, verdana, arial; color : white; text-decoration : none;}
+a:active {color: #0099ff;}
+a:hover {color: #0099ff;}
+a.direitans:hover {color: #000000;}
+
+h1{color: #002A69; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bolder; margin: 0px; text-transform: uppercase;}
+h2{color: #cc0000; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bolder; margin: 0px; text-transform: uppercase;}
+h3{color: #fff; font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif; font-size: 14px; font-weight: bolder; margin: 0px; text-transform: uppercase;}
+hr {color:#d8d8d8; width: 100%; height: 1px}
+fieldset {
+	padding: 10px 10px 10px 10px;
+}
+legend {
+	padding: 3px 5px 3px 5px;
+	margin: 3px 0px 3px 0px;  
+}
+
+.l-gray{background-color: #DCDEE0; width: 100%;}
+.l-gray2{background-color: #DCDCDE; width: 100%; margin: 4 0 4 0;}
+.l-gray3{background-color: #DCDCDE; width: 100%; margin: 2 0 2 0;}
+.l-white{background-color: #ECEFF1; width: 100%;}
+.l-blue{background-color: #446291; width: 100%;}
+.l-blue2{background-color: #285499; width: 100%; margin: 4 0 4 0;}
+.l-red{background-color: #D44747; width: 100%;}
+.l-red2{background-color: #C32828; width: 100%; margin: 4 0 4 0;}
+.red{color: #cc0000;}
+.blue{color: #3A5A8B;}
+.blue2{color: #002A69;}

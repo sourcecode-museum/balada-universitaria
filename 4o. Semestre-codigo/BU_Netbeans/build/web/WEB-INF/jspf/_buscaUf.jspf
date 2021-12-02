@@ -1,0 +1,25 @@
+    <%
+        String ufc = request.getParameter("uf");
+        if (ufc == null){
+            ufc = "SP";
+        } 
+        
+//        int umes = Integer.parseInt(request.getParameter("mes"));
+//        if ( umes = null) {
+//           java.util.GregorianCalendar cal = new java.util.GregorianCalendar(); 
+//           int month = (cal.get(cal.MONTH)); 
+//         }
+        java.sql.Connection conn = br.project.dao.JdbcDAOFactory.getConnection();
+        br.project.dao.Unidade_FederativaDAO edao = new br.project.dao.Unidade_FederativaDAO(conn);
+        List lista = edao.getCollection();
+        //br.project.transferobject.EstabelecimentoTO eto;
+        for(Object obj : lista) {
+            br.project.transferobject.Unidade_FederativaTO eto = (br.project.transferobject.Unidade_FederativaTO) obj;
+                if (ufc.equals(eto.getUf())) { %>
+                       <option selected value=<%=eto.getUf()%>><%=eto.getUf()%></option>    
+<%              } else { %>
+
+                       <option  value=<%=eto.getUf()%>><%=eto.getUf()%></option>    
+<%                   }
+                }
+%>

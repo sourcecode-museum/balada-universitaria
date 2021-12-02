@@ -1,0 +1,44 @@
+<%-- 
+    Document   : _siteEnd
+    Created on : 14/06/2008, 21:03:50
+    Author     : Heliomar
+--%>
+            </td>
+        </tr>
+        </table>
+	
+        <!-- *********************************************************
+        RODAPÉ
+        ********************************************************** -->	
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td><img src="imgs/site/c1.gif" width="7" height="7" alt="" border="0"></td>
+            <td background="imgs/site/c2.gif"></td>
+            <td><img src="imgs/site/c3.gif" width="7" height="7" alt="" border="0"></td>
+        </tr>
+        <tr>
+            <td background="imgs/site/c4.gif"></td>
+            <td bgcolor="black" width="100%" align="center" height="30">
+                <a href="http://www.responsabilidadesocial.com" class="menor" target="_blank">Responsabilidade&nbsp;social</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.etco.org.br" class="menor" target="_blank">Ética concorrêncial</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.internetetica.com.br" class="menor" target="_blank">Ética, Direiro e Internet</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="http://www.ecologizar.com.br" class="menor" target="_blank">Ecologizar</a>
+            </td>
+            <td background="imgs/site/c5.gif"></td>
+        </tr>
+        <tr>
+            <td><img src="imgs/site/c6.gif" width="7" height="7" alt="" border="0"></td>
+            <td background="imgs/site/c7.gif"></td>
+            <td><img src="imgs/site/c8.gif" width="7" height="7" alt="" border="0"></td>
+        </tr>
+        </table>
+	</td>
+    <td></td>
+</tr>
+</table>
+
+</body>
+</html>	

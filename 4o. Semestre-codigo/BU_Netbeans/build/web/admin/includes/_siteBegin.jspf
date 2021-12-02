@@ -1,0 +1,68 @@
+<%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
+<%@ page import="br.project.admin.*" %>
+<%@ page import="br.project.dao.*" %>
+<%@ page import="br.project.transferobject.*" %>
+<%@ page import="java.lang.*, java.util.*" %>
+
+<%
+/*
+ * verificando se usuario está logado
+*/
+boolean logoff = false;
+if (request.getParameter("log") != null) 
+    logoff = request.getParameter("log").equals("off");
+  
+Adm_UsuarioTO admSession = (Adm_UsuarioTO) request.getSession().getAttribute("adm_session");
+
+if (admSession == null || logoff ) {
+    //session.invalidate();
+    admSession = new Adm_UsuarioTO();       //para evitar de leitura no restante da pagina
+    request.getSession().invalidate();      //finaliza a secao
+    response.sendRedirect("login.jsp");     //redireciona para a pagina de login
+}
+/*finalizando verificacao usuario logado*/
+
+//Objeto de usuario constante no site
+admFuncoes oFuncoes = new admFuncoes();
+admConfig oConfig = new admConfig();
+%>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title><%=oConfig.getNomeSite()%> - &Aacute;rea Administrativa</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+
+    <script language="javascript" src="framework/js/funcoes.js" type="text/javascript"></script>
+    <script language="javascript" src="framework/js/mascaras.js" type="text/javascript"></script>
+</head>
+<body>
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+<tr>
+	<td id="header" colspan="2">
+		<h1>Administra&ccedil;&atilde;o&nbsp;-&nbsp;<%=oConfig.getNomeSite()%></h1>
+		<div id="right" align="right">
+			Voc&ecirc; est&aacute; logado como <b><%=admSession.getNome()%></b><br/>
+	  	</div>
+	</td>
+</tr>
+<tr>
+	<td id="toolbar" colspan="2">
+		<div id="right" align="right">
+			<a href="./index.jsp">Principal</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="./index.jsp?log=off">Logoff</a>	
+		</div>
+	</td>
+</tr>
+<tr valign="top">
+	<td height="100%">	
+         <div id="menu">
+             <%
+             admMontarMenu menu = new admMontarMenu();
+             out.print(menu.getMenu());
+             %>
+         </div>
+	</td>
+	<td width="100%">

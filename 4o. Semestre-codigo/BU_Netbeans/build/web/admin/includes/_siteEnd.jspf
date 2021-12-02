@@ -1,0 +1,32 @@
+<%
+    //fechando as tags iniciadas no arquivo de include _siteBegin.jspf
+    out.println("</td>");
+    out.println("</tr>");
+%>
+<tr>
+	<td id="footer" colspan="2">
+        <h1>::.&nbsp;</h1>
+        <%
+		/**
+        if isnumeric(Application("UserOnLine")) then
+			'if cdbl(Application("UserOnLine")) -1 > 0 then
+				Response.Write("<h1>Pessoas OnLine:&nbsp;" & cdbl(Application("UserOnLine")) -1 & "</h1>")
+			'end if
+		else
+			Response.Write("<h1>Pessoas OnLine:&nbsp;</h1>")
+		end if
+        **/
+		%>
+		<div id="right" align="right">
+			<a href="mailto:<%=oConfig.getEmailSite()%>">By Equipe Balada Universitária</a>
+			<br>
+			<a href="<%=oConfig.getHttpSite()%>" target="_blank">&reg; TGSI 4A3 - Uninove Memorial</a>
+		</div>
+	</td>
+</tr>
+</table>
+<%
+oConfig = null;
+oFuncoes = null;
+%>
+</body></html>

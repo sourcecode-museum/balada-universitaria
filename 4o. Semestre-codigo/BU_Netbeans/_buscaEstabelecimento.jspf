@@ -1,0 +1,18 @@
+<%@page import="java.util.List, java.lang.*" %>
+<%
+        java.sql.Connection conn = br.project.dao.JdbcDAOFactory.getConnection();
+        
+        br.project.dao.EstabelecimentoDAO edao = new br.project.dao.EstabelecimentoDAO(conn);
+        List lista = edao.getCollection();
+         
+    for(Object obj : lista) {
+       br.project.transferobject.EstabelecimentoTO eto = 
+                    (br.project.transferobject.EstabelecimentoTO) obj; 
+           if (vCodEstab == eto.getCod_Estabelecimento() ) {%>
+        <option  selected value=<%=eto.getCod_Estabelecimento()%>><%=eto.getNome_Fantasia()%></option> 
+<%        } 
+           else {  %>
+        <option   value=<%=eto.getCod_Estabelecimento()%>><%=eto.getNome_Fantasia()%></option>            
+           
+<%                } 
+       }       %>

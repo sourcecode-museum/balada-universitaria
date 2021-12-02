@@ -1,0 +1,75 @@
+body {
+    width:100%;
+    height:100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: normal;
+}
+fieldset {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #B8B8B8;	
+}
+#centerLogin{
+    position: relative;
+    width: 280px; left: 50%; margin-left: -140px;
+    height: 150px; top: 50%; margin-top: -75px;
+    text-align: center;
+    vertical-align: middle;
+    border: 0 solid #000000;
+}
+#framelogin {
+    height: 100px;
+    padding: 0px 5px 0px 0px;
+}
+
+div#imgLogin {
+    background-repeat:no-repeat;
+    background-image: url(../imgs/seguranca.jpg);
+    height: 93px; width: 95px;
+    position: absolute;
+    margin-left: -25px;
+    margin-top: -20px;
+}
+
+div#msgtopAviso {
+    width: 100%; left: 0px; margin-left: -50%;
+    height: 25px; top: 0px; margin-top: 0px;
+    background-color:#FFFFCC; 
+    border: 1px solid #FFEE8A;
+    font-size:11px;
+    padding: 8px;
+    margin: 0px;
+    position: relative;
+}
+
+th{
+    /*font-family: MS Sans Serif;*/
+    color: #003333;
+    font-size: 12px;
+    font-weight : bold;
+}
+
+td {
+    font-size: 11px;
+    text-decoration: none;
+    font-weight: normal;
+}
+#footer {
+    background-color: #000000; border-top: 5px solid #ffd700; height: 40px;
+}
+#footer h1 {
+    font-weight: normal; font-size: 18px; left: 15px; margin: 0px; color: #ffffff; position: relative; top: 2px;
+}
+#footer div#right {
+    float: right; color: #ffffff; margin: -20px 15px 0px 0px;
+}
+#footer div#right a{
+    font-family: verdana, geneva, arial, helvetica, sans-serif;
+    font-size: 10px;	
+    color: #006699;
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+<!-- BUSCA -->
+<table width="150" cellspacing="0" cellpadding="0" border="0">
+<tr>
+    <td><img src="imgs/site/c1.gif" width="7" height="7" alt="" border="0"></td>
+    <td background="imgs/site/c2.gif"></td>
+    <td><img src="imgs/site/c3.gif" width="7" height="7" alt="" border="0"></td>
+</tr>
+<tr>
+    <td background="imgs/site/c4.gif"></td>
+    <td bgcolor="black" width="100%">
+        <img src="imgs/site/busca.gif" width="60" height="25" alt="" border="0">
+        <table cellspacing="1" cellpadding="0" border="0">
+        <tr>
+            <td><input class="input" type="text" size="18"></td>
+            <td><img src="imgs/site/ok.gif" width="20" height="19" alt="" border="0"></td>
+        </tr>
+        </table>
+    </td>
+    <td background="imgs/site/c5.gif"></td>
+</tr>
+<tr>
+    <td><img src="imgs/site/c6.gif" width="7" height="7" alt="" border="0"></td>
+    <td background="imgs/site/c7.gif"></td>
+    <td><img src="imgs/site/c8.gif" width="7" height="7" alt="" border="0"></td>
+</tr>
+</table>

@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<title>Cadastro</title>
+
+<script language="JavaScript" type="text/javascript">
+
+
+	function validar()
+	{
+		with(form)
+		{  
+			if (frmnome.value.length < 2)
+			{
+				alert("Por favor, informe seu nome.");
+				frmnome.focus();
+				return false;
+			}
+			if (frmdia.value == "")
+			{
+				alert("Por favor, informe seu dia de nascimento.");
+				frmdia.focus();
+				return false;
+			}
+			if (frmmes.value == "")
+			{
+				alert("Por favor, informe seu mês de nascimento.");
+				frmmes.focus();
+				return false;
+			}
+			if (frmano.value == "")
+			{
+				alert("Por favor, informe seu ano de nascimento.");
+				frmano.focus();
+				return false;
+			}
+			if (frmsexo.value == "")
+			{
+				alert("Por favor, informe seu sexo.");
+				frmsexo.focus();
+				return false;
+			}
+			if (frmendereco.value.length < 2)
+			{
+				alert("Por favor, informe seu endereço.");
+				frmendereco.focus();
+				return false;
+			}
+			if (frmbairro.value.length < 2)
+			{
+				alert("Por favor, informe seu bairro.");
+				frmbairro.focus();
+				return false;
+			}
+			if (frmcep.value == "")
+			{
+				alert("Por favor, informe seu cep.");
+				frmcep.focus();
+				return false;
+			}		
+
+  	var strcep = frmcep.value;
+ 		if (strcep.length != 9){
+ 			alert("CEP informado inválido(99999-999).");
+ 			frmcep.focus();
+ 			return false
+ 		}else{
+ 			if (strcep.indexOf("-") != 5){
+ 				alert("Formato de CEP informado inválido (99999-999).");
+ 				frmcep.focus();
+ 				return false
+ 			}else{
+ 				if (isNaN(strcep.replace("-","0"))){
+ 					alert("CEP informado inválido(99999-999).");
+ 					frmcep.focus();
+ 					return false
+ 				}
+ 			}
+ 		}	  
+				
+				
+			if (frmcidade.value.length < 2)
+			{
+				alert("Por favor, informe sua cidade.");
+				frmcidade.focus();
+				return false;
+			}
+			if (frmestado.value == "")
+			{
+				alert("Por favor, informe seu estado.");
+				frmestado.focus();
+				return false;
+			}
+			if (frmddd.value == "")
+			{
+				alert("Por favor, informe o ddd do seu telefone.");
+				frmddd.focus();
+				return false;
+			}
+
+ 				if (isNaN(frmddd.value)){
+ 					alert("Informe umm DDD númerico");
+ 					frmddd.focus();
+ 					return false
+ 				}	
+			
+			if (frmtelefone.value == "")
+			{
+				alert("Por favor, informe o número do seu telefone.");
+				frmtelefone.focus();
+				return false;
+			}							
+
+  	var strfone = frmtelefone.value;
+ 		if (strfone.length != 9){
+ 			alert("Telefone informado inválido(9999-9999).");
+ 			frmtelefone.focus();
+ 			return false
+ 		}else{
+ 			if (strfone.indexOf("-") != 4){
+ 				alert("Formato do Telefone informado inválido (9999-9999).");
+ 				frmfone.focus();
+ 				return false
+ 			}else{
+ 				if (isNaN(strfone.replace("-","0"))){
+ 					alert("Telefone informado inválido(9999-9999).");
+ 					frmtelefone.focus();
+ 					return false
+ 				}
+ 			}
+ 		}	  
+									
+			var email = frmemail.value;
+			if (email.indexOf("@") == -1 || email.indexOf(".") == -1)
+			{
+				alert("Por favor, informe um e-mail válido.");
+				frmemail.focus();
+				return false;
+			}				
+			if (frmsenha.value.length < 1)
+			{
+				alert("Por favor, uma senha para seu cadastro.");
+				frmsenha.focus();
+				return false;
+			}											
+		}		
+      alert('Enviado com sucesso!!');
+	}		
+</script>
+
+</head>
+<body bgcolor="darkred">
+<table border="0" cellpadding="3" cellspacing="0">     
+<font face="batang" size="2" color="#ffffff">
+      Fa&ccedil;a seu cadastro e participe de nossas promo&ccedil;&otilde;es e 
+      concorra a VIP&acute;s.</font><br>
+      <br>
+      <table border="0" cellpadding="5" cellspacing="0">
+        <form name="form" method="post" action="" onSubmit="return validar();">
+        
+
+          <tr>            <td class="textos_home"><b><font face="batang" size="2" color="#ffffff">Nome:</font></b></td>
+            <td colspan="3" class="textos_home"> <input name="frmnome" class="input_form" value="" size="58" maxlength="50"> 
+            </td>
+          </tr>
+          <tr> 
+            <td><b><font face="batang" size="2" color="#ffffff">Nascimento:</font></b></td>
+            <td> <select name="frmdia" style="width:50px;" class="input_form" id="frmdia">
+                <option selected value=""></option>
+								<script>
+								   var i;
+									 i=1; 
+									     do { 
+											      document.write("<option value="+i+">"+i+"</option> ");
+														i++;
+														} while (i < 32)
+								</script>
+              </select>
+              / 
+              <select name="frmmes" style="width:60px;" class="input_form" id="frmmes">
+                <option selected value=""></option>
+                <option value=1>JAN</option>
+                <option value=2>FEV</option>
+                <option value=3>MAR</option>
+                <option value=4>ABR</option>
+                <option value=5>MAI</option>
+                <option value=6>JUN</option>
+                <option value=7>JUL</option>
+                <option value=8>AGO</option>
+                <option value=9>SET</option>
+                <option value=10>OUT</option>
+                <option value=11>NOV</option>
+                <option value=12>DEZ</option>
+              </select>
+              / 
+              <select name="frmano" class="input_form" id="frmano">
+                <option selected value=""></option>
+											<script>
+								   var i;
+									 i=1950; 
+									     do { 
+											      document.write("<option value="+i+">"+i+"</option> ");
+														i++;
+														} while (i < 2006)
+								</script>
+              </select> </td>
+            <td align="right" class="textos_home"><b><font face="batang" size="2" color="#ffffff">Sexo:</font></b></td>
+            <td> <select name="frmsexo" style="width:90px;" class="input_form" id="frmsexo">
+                <option selected value=""></option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+              </select> </td>
+          </tr>
+          <tr> 
+            <td><b><font face="batang" size="2" color="#ffffff">Endere&ccedil;o:</font></b></td>
+            <td colspan="3"> <input name="frmendereco" type="text" class="input_form" id="frmendereco" value="" size="58"></td>
+          </tr>
+          <tr> 
+            <td><b><font face="batang" size="2" color="#ffffff">Bairro:</font></b></td>
+            <td><input name="frmbairro" type="text" class="input_form" id="frmbairro" value="" size="30"></td>
+            <td align="right"><b><font face="batang" size="2" color="#ffffff">Cep:</font></b></td>
+            <td><input name="frmcep" type="text" class="input_form" id="frmcep" value="" size="11" maxlength="9"> 
+            </td>
+          </tr>
+          <tr> 
+            <td><b><font face="batang" size="2" color="#ffffff">Cidade:</font></b></td>
+            <td><input name="frmcidade" type="text" class="input_form" id="frmcidade" value="" size="30"></td>
+            <td align="right"><b><font face="batang" size="2" color="#ffffff">Estado:</font></b></td>
+            <td><select name=frmestado class="input_form" id="frmestado" style="width:90px;">
+                <option value=AC>AC</option>
+                <option value=AL>AL</option>
+                <option value=AM>AM</option>
+                <option value=AP>AP</option>
+                <option value=BA>BA</option>
+                <option value=CE>CE</option>
+                <option value=DF>DF</option>
+                <option value=ES>ES</option>
+                <option value=GO>GO</option>
+                <option value=MA>MA</option>
+                <option value=MG>MG</option>
+                <option value=MS>MS</option>
+                <option value=MT>MT</option>
+                <option value=PA>PA</option>
+                <option value=PB>PB</option>
+                <option value=PE>PE</option>
+                <option value=PI>PI</option>
+                <option value=PR>PR</option>
+                <option value=RJ>RJ</option>
+                <option value=RN>RN</option>
+                <option value=RO>RO</option>
+                <option value=RR>RR</option>
+                <option value=RS>RS</option>
+                <option value=SC>SC</option>
+                <option selected value=SP>SP</option>
+                <option value=SE>SE</option>
+                <option value=TO>TO</option>
+              </select></td>
+          </tr>
+          <tr> 
+            <td><b><font face="batang" size="2" color="#ffffff">Telefone:</font></b></td>
+            <td colspan="3"><input name="frmddd" type="text" class="input_form" id="frmddd" value="" size="2" maxlength="2"> 
+              <input name="frmtelefone" type="text" class="input_form" id="frmtelefone" value="" size="9" maxlength="9"></td>
+          </tr>
+          <tr> 
+            <td><b><font face="batang" size="2" color="#ffffff">Email:</font></b></td>
+            <td colspan="3"> <input name="frmemail" type="text" class="input_form" id="frmemail" value="" size="58"></td>
+          </tr>
+          <tr> 
+            <td class="textos_home"><b><font face="batang" size="2" color="#ffffff">Senha:</font></b></td>
+            <td colspan="3" valign="bottom" class="textos_home"> <input name="frmsenha" type="password" class="input_form" id="frmsenha" value="" size="6" maxlength="6"> 
+              <font size="1" color="#ffffff">&nbsp;(M&aacute;ximo 6 caracteres)</font></td>
+          </tr>
+          <tr> 
+            <td colspan="4" class="textos_home"><input name="frmnewsletter" type="checkbox" value="1">
+              <font face="batang" size="2" color="#ffffff">Deseja receber as novidades do site por email.</font></td>
+          </tr>
+          <tr> 
+            <td colspan="4" class="titulos_home" align="center"> <br>
+						<input type="submit" name="enviar" style="width:120px;font-family:'Goudy Stout'" value="Enviar">
+						<input type="reset" name="limpar" style="width:120px;font-family:'Goudy Stout'" value="Limpar" onclick="alert('Todos os Dados serão apagados');">
+						
+						
+            </td>
+          </tr></font>
+        </form>
+      </table>
+       </td>
+  </tr>
+</table></font></td>
+</tr>
+</table></td>
+</tr>
+</table>
+</body>
+</html>
